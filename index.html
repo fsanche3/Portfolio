@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name ="viewport" content= "width=device-width, initial-scale=1.0">
+<title> F.S. Portfolio </title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="wrap">
+
+<header>
+  <div class="nav-bar">
+    <a href="#" class="logo"> Franklyn Sanchez </a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+      <div class="navigation" onclick="toggleMenu();">
+        <a class="active" href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contanct">Contact</a>
+        <a href=""><i>Resume</i></a>
+      </div>
+    </div>
+</header>
+
+<section class="banner" id="banner">
+  <div class="content">
+    <div class="box">
+      <h2> <i>Hello</i> 👋</h2>
+      <p>My name is Franklyn Sanchez and i am a passionate full stack developer
+      that enjoys designing useful software and applying it to real world models. </p>
+      <div class="btn-group">
+      <a href="#about" class="color1"> About me</a>
+      <a href=""> <i>Resume</i> </a>
+    </div>
+  </div>
+</div>
+</section>
+
+<a href="#projects" class="scroll-down"> Projects <i class="fas fa-arrow-down"> </i></a>
+</div>
+
+<section class="about" id="about">
+<h2><span>A</span>bout</h2><hr>
+<p>
+I recently graduated from Suny Oswego this May of 2022 with a bachelor’s
+ degree in Information Science and a minor in Communications. During my time there,
+  I applied programming languages and scripting languages such as Java, Golang, JavaScript,
+   and PHP. I also gathered experience working with API’s and database management tools such
+    as MySQL and Tableau to aid full stack development. So far, I have enjoyed applying these skills
+     to my own personal projects and I look forward to continue learning and growing as a developer.
+</p>
+
+<div class="stack">
+  <h2><span>T</span>echnical Stack</h2>
+<ul class="inner">
+  <li><i class="fa-brands fa-java fa-3x"></i></li>
+  <li><i class="fa-brands fa-golang fa-3x"></i></li>
+  <li>MySQL <i class="fa-solid fa-database fa-3x"></i></li>
+  <li><i class="fa-brands fa-js fa-3x"></i></li>
+  <li><i class="fa-brands fa-php fa-3x"></i></li>
+  <li><i class="fa-brands fa-html5 fa-3x"></i></li>
+  <li><i class="fa-brands fa-css3-alt fa-3x"></i></li>
+  <li>Tableau</li>
+</ul>
+</div>
+</section>
+
+<section class="projects" id="projects">
+<h2><span>P</span>rojects</h2><hr>
+
+<div class="container">
+<section>
+  <div class="overlay">
+
+<div class="description">
+                <p>
+                  Designed an Exoplanet Archive.
+                </p>
+
+                <h6>Tools<span class="glyphicon glyphicon-cog"></span></h6>
+                <ul class="tools vertical-list">
+                  <li>Golang</li>
+                  <li>MySQL</li>
+                  <li>PHP + JavaScript</li>
+                  <li>HTML + CSS</li>
+                  <li>Tabluea</li>
+                </ul>
+
+                <div class="project-btn-grp">
+                <button class="project-btn github"> Code </button>
+                <button class="project-btn live"> Link </button>
+                </div>
+
+              </div>
+              <img src="exo.jpg" alt="">
+<h4 style="text-align:center;" class="heading">The Exoplanet Archive <br><hr>(Full Stack)</h4>
+
+</div>
+</section>
+<section>
+  <div class="overlay">
+
+<div class="description">
+                <p>
+                  Designed a website for my local barbershop.
+                </p>
+
+                <h6>Tools</h6>
+                <ul class="tools vertical-list">
+                  <li>JavaScript</li>
+                  <li>HTML + CSS</li>
+                </ul>
+
+                <div class="project-btn-grp">
+                <button class="project-btn github"> Code </button>
+                <button class="project-btn live"> Link </button>
+                </div>
+
+              </div>
+              <img src="cny.png" alt="">
+<h4 style="text-align:center;" class="heading">CNY Elite Barbershop <br><hr>(Front End)</h4>
+
+</div>
+</section>
+
+<section>
+  <div class="overlay">
+
+<div class="description">
+                <p>
+                  A webpage containing source code and outputs
+                  of fundamentals of object oriented programming with Java.
+                </p>
+
+                <h6>Tools</h6>
+                <ul class="tools vertical-list">
+                  <li>Java</li>
+                </ul>
+
+                <div class="project-btn-grp">
+                <button class="project-btn github"> Code </button>
+                <button class="project-btn live"> Link </button>
+                </div>
+
+              </div>
+              <img src="CS1.png" alt="">
+<h4 style="text-align:center;" class="heading"> CSC Worksite <br><hr>(OOP)</h4>
+<br>
+</div>
+</section>
+</section>
+</div>
+
+<section class="contanct" id="contanct">
+<h2><span>C</span>ontact Me</h2><hr>
+  <form class=".contact_form" action="#">
+    <input class="name" type="text" id="name" placeholder="Your Name" required>
+    <input class="email" id="email" placeholder="Email" required>
+    <textarea class="massage" rows="4" placeholder="You Message"></textarea>
+    <button id="bottn" type="submit"> Send</button>
+  </form>
+
+</section>
+
+
+
+
+
+
+
+<script type="text/javascript">
+window.addEventListener('scroll', function(){
+  const header = document.querySelector('header');
+  header.classList.toggle('sticky', window.scrollY > 0);
+});
+
+function toggleMenu(){
+  const menuToggle = document.querySelector('.menuToggle');
+  const navigation = document.querySelector('.navigation');
+  menuToggle.classList.toggle('active');
+  navigation.classList.toggle('active');
+}
+</script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+
+
+</script>
+
+</body>
+</html>
