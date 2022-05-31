@@ -204,7 +204,7 @@ I recently graduated from Suny Oswego this May of 2022 with a bachelor’s
                 </ul>
 
                 <div class="project-btn-grp">
-              <a href="https://fsanche3.github.io/Portfolio/"> <button class="project-btn live"> Link </button></a>
+              <a href=""> <button class="project-btn live"> Link </button></a>
                 </div>
 
               </div>
