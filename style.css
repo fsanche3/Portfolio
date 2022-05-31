@@ -41,6 +41,7 @@ font-family: 'Poppins', sans-serif;
 html
 {
   scroll-behavior: smooth;
+  max-width: 100%;
 }
 
 body
@@ -69,6 +70,7 @@ color: #fff;
 font-size: 1.2em;
 font-weight: 500;
 margin-top: 90px;
+margin-bottom: 15px;
 }
 .scroll-down i
 {
@@ -93,17 +95,12 @@ margin-top: 90px;
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+  width: auto;
+  position: relative;
   overflow: hidden;
   background-blend-mode: overlay;
 }
 
-.wave
-{
-position: absolute;
-width: 100%;
-color: #fff;
-opacity: 1;
-}
 
 .content
 {
@@ -133,6 +130,7 @@ opacity: 1;
 {
   margin-top: 10px;
   text-align: center;
+  cursor: pointer;
 }
 
 .content a
@@ -180,11 +178,6 @@ header.sticky
   transition: .6s ease;
 }
 
-header.sticky .nav-bar
-{
-  height: calc(2.5rem + 1rem);
-}
-
 .nav-bar .logo
 {
   color: #111;
@@ -199,33 +192,36 @@ header.sticky .nav-bar
   font-weight: 500;
 }
 
-.navigation a:not(:last-child)
+.navigation a
 {
   margin-right: 50px;
 }
 
+.projects
+{
+  display: inline-block;
+}
 
-
-.about , .projects , .contanct
+.about , .projects , .contact
 {
   padding-top: 40px;
   padding-left: 90px;
   padding-right: 90px;
 }
 
-.about h2 , .projects h2, .contanct h2
+.about h2 , .projects h2, .contact h2
 {
 text-align:left;
 }
 
-.about span , .projects span, .contanct span
+.about span , .projects span, .contact span
 {
 
   color: #ffc107;
   font-size: 1.7em;
 }
 
-.about hr , .projects hr, .contanct hr
+.about hr , .projects hr, .contact hr
 {
   align:center;
   border: none;
@@ -238,29 +234,9 @@ text-align:left;
 {
   margin-top: 15px;
 }
-.stack img
-{
-display: inline-block;
-width: 15%;
 
-}
-.inner
-{
-  width: 65%;
-  display: flex;
-  justify-content: space-between;
-}
 
-.stack h2
-{
-  text-align: left;
-}
-
-.inner i {
-  margin-top: 10px;
-}
-
-.contanct
+.contact
 {
   width: 100%;
   height: 100vh;
@@ -274,8 +250,7 @@ form
   display: flex;
   flex-direction: column;
   padding: 2vw 4vw;
-  width: 90%;
-  max-width: 400px;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -297,7 +272,7 @@ form button
   border: 0;
   outline: none;
   cursor: pointer;
-  
+
 }
 
 
@@ -423,7 +398,7 @@ form button
 }
 
 .projects section {
-	height: 100%;
+
 	margin-bottom: 20px;
 }
 
@@ -439,6 +414,7 @@ form button
 .projects .description h4 {
 	color: white;
 }
+
 
 .projects .heading {
 	position: relative;
@@ -492,6 +468,15 @@ form button
 @media screen and (max-width: 1070px)
  {
 
+   .wrap{
+     width: auto;
+   }
+
+   html {
+       max-width: 100%;
+       overflow-x: hidden;
+   }
+
    header.sticky .menuToggle
      {
        filter: invert(-1);
@@ -525,20 +510,44 @@ form button
     background-position: center;
   }
 
+.navigation {
+  top: 10vh;
+  height: 30vh;
+  margin: 0;
+  right: -100%;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.navigation a {
+  text-align: center;
+  line-height: 60px;
+  width: 100%;
+  display: table;
+}
+.navigation a:hover{
+  background-color: tan;
+  color: white;
+  transition: all 0.4s ease-out;
+}
+
 /* background nav */
-  header .navigation.active
-  {
-    width: 100%;
-    height: calc(100% - 40px);
-    position: fixed;
-    top: 40px;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-left: 0px;
-  }
+header .navigation.active
+{
+width: 100%;
+height: 50vh;
+position: fixed;
+background: rgba(255, 255, 255, 0.95);
+box-shadow: var(--box-shadow);
+backdrop-filter: blur(20px);
+right: 0;
+opacity: 1;
+transition: all 0.5s ease;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
 
   .projects [class^="col"] section {
 		width: 80%;
@@ -641,6 +650,11 @@ form button
 	.projects .heading span {
 		display: none;
 	}
+
+  html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -648,5 +662,10 @@ form button
 	.projects .overlay {
 		height: 70%;
 	}
+
+  html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 }
