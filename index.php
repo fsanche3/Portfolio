@@ -115,7 +115,9 @@ I recently graduated from Suny Oswego this May of 2022 with a bachelor’s
 
 <div class="description">
                 <p>
-                  Designed an Exoplanet Archive.
+                  Produced an Exoplanet Archive that extracts exoplanet data from NASA automatically on a timley basis.
+                  This project includes features such as Pagination and Data visualization and was created for those intrested
+                  in new exoplanet discoveries.
                 </p>
 
                 <h6>Tools<span class="glyphicon glyphicon-cog"></span></h6>
@@ -143,7 +145,7 @@ I recently graduated from Suny Oswego this May of 2022 with a bachelor’s
 
 <div class="description">
                 <p>
-                  Designed a website for my local barbershop.
+                  Designed and hosted a responsive website using Github Pages for my local barbershop.
                 </p>
 
                 <h6>Tools</h6>
@@ -169,8 +171,8 @@ I recently graduated from Suny Oswego this May of 2022 with a bachelor’s
 
 <div class="description">
                 <p>
-                  A webpage containing source code and displaying outputs of
-                 object oriented programming with Java.
+                  A webpage containing fundamental Java coding tasks and displaying outputs of
+                 object oriented programming.
                 </p>
 
                 <h6>Tools</h6>
@@ -194,7 +196,7 @@ I recently graduated from Suny Oswego this May of 2022 with a bachelor’s
 
 <div class="description">
                 <p>
-                  My Portfolio page.
+                  Created a responsive portfolio page.
                 </p>
 
                 <h6>Tools</h6>
@@ -204,11 +206,12 @@ I recently graduated from Suny Oswego this May of 2022 with a bachelor’s
                 </ul>
 
                 <div class="project-btn-grp">
+              <a href="https://github.com/fsanche3/cnybarber"><button class="project-btn github"> Code </button></a>
               <a href=""> <button class="project-btn live"> Link </button></a>
                 </div>
 
               </div>
-              <img src="CS1.png" alt="">
+              <img src="port.png" alt="">
 <h4 style="text-align:center;" class="heading"> Portfolio webpage <br><hr>(Front end)</h4>
 <br>
 </div>
