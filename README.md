@@ -1,9 +1,4 @@
 # Portfolio
-### Table of Contents
-- [Description](#description)
-- [Stack](#stack)
-- [Link](#link)
-
 ## Description
 
 This is a Portfolio website thats responsive on all screens and has a few other features like animation and form validation. 
