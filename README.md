@@ -1,7 +1,7 @@
 # Portfolio
 ## Description
 
-This is a Portfolio website thats responsive on all screens and has a few other features like animation and form validation. 
+This is a Portfolio website that portrays my projects. It's responsive on all screens and has a few other features like animation and form validation. 
 
 ## Stack 
 - PHP --> mail() php's emailing function, was mainly used for the contact form's validation. It also is responsible for the conformation message sent once a user submits the form.  
